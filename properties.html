@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties — Mountain Magic Homes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+    <div class="header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">M</span>
+            <span class="logo-text">Mountain Magic</span>
+        </a>
+        <nav class="primary-nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="properties.html" class="nav-link active">Properties</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <a href="contact.html" class="btn btn-accent btn-sm">Book Now</a>
+        </div>
+        <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+</header>
+
+<!-- ==================== PAGE HERO ==================== -->
+<section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=2400&q=80');"></div>
+    <div class="page-hero-content">
+        <span class="eyebrow light">Our Collection</span>
+        <h1>The Properties</h1>
+        <p>A small, considered portfolio of mountain retreats across Virginia's Blue Ridge — each with its own character, all with the same standard.</p>
+    </div>
+</section>
+
+<!-- ==================== PROPERTIES GRID ==================== -->
+<section>
+    <div class="container">
+
+        <!-- Filter bar (visual placeholder) -->
+        <div class="filter-bar">
+            <div class="filter-item">
+                <label>Location</label>
+                <select><option>All Regions</option><option>Blue Ridge</option><option>Shenandoah Valley</option></select>
+            </div>
+            <div class="filter-item">
+                <label>Guests</label>
+                <select><option>Any</option><option>2+</option><option>4+</option><option>8+</option></select>
+            </div>
+            <div class="filter-item">
+                <label>Bedrooms</label>
+                <select><option>Any</option><option>2+</option><option>3+</option><option>4+</option></select>
+            </div>
+            <div class="filter-item">
+                <label>Price Range</label>
+                <select><option>Any</option><option>Under $500</option><option>$500 – $1000</option><option>$1000+</option></select>
+            </div>
+            <a href="#" class="btn btn-dark btn-sm">Search</a>
+        </div>
+
+        <!-- Grid: 1 real card + placeholders -->
+        <div class="properties-grid">
+            <a href="alpine-vista-lodge.html" class="property-card" style="text-decoration:none;color:inherit;">
+                <div class="img-wrap">
+                    <div class="img" style="background-image: url('https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1200&q=80');"></div>
+                    <div class="badge accent">Featured</div>
+                </div>
+                <div class="body">
+                    <h3>Alpine Vista Lodge</h3>
+                    <div class="location">Blue Ridge Mountains, VA</div>
+                    <div class="features">
+                        <span><strong>4</strong>Bed</span>
+                        <span><strong>3</strong>Bath</span>
+                        <span><strong>8</strong>Guests</span>
+                    </div>
+                    <div class="price-row">
+                        <div class="price">$450<span> / night</span></div>
+                        <span class="btn-ghost" style="font-size:11px;padding:0;border:none;letter-spacing:2px;text-transform:uppercase;">View →</span>
+                    </div>
+                </div>
+            </a>
+
+            <div class="property-card placeholder">
+                <div class="placeholder-inner">
+                    <div class="num">02</div>
+                    <h4>Coming Soon</h4>
+                    <p>A second retreat in our collection — currently in final styling.</p>
+                </div>
+            </div>
+
+            <div class="property-card placeholder">
+                <div class="placeholder-inner">
+                    <div class="num">03</div>
+                    <h4>Coming Soon</h4>
+                    <p>Property three — joining the portfolio later this season.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align:center;margin-top:80px;">
+            <p style="color:var(--text-muted);margin-bottom:24px;font-size:15px;">Looking for something specific? We curate private listings for repeat guests.</p>
+            <a href="contact.html" class="btn btn-outline-dark">Inquire About Private Listings</a>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== CTA STRIP ==================== -->
+<section class="cta-strip">
+    <div class="cta-strip-bg" style="background-image: url('https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=2000&q=80');"></div>
+    <div class="container">
+        <span class="eyebrow light">Personal Concierge</span>
+        <h2>Not Sure Where to Begin?</h2>
+        <p>Tell us about your stay — group size, dates, the kind of experience you're after — and we'll match you to the right retreat.</p>
+        <a href="contact.html" class="btn btn-accent btn-lg">Speak With Concierge</a>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <span class="logo-mark">M</span>
+                    <span class="logo-text">Mountain Magic</span>
+                </a>
+                <p>Premium short-term mountain rentals in Virginia's Blue Ridge. Sophisticated design meets natural beauty.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Explore</h5>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Contact</h5>
+                <p>Blue Ridge Mountains<br>Virginia, USA</p>
+                <p>hello@mountainmagichomes.com</p>
+                <p>(540) 555-0142</p>
+            </div>
+            <div class="footer-col">
+                <h5>Newsletter</h5>
+                <p>Quarterly dispatches — new properties, seasonal guides, exclusive offers.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Join →</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Mountain Magic Homes LLC. All rights reserved.</span>
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+                <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12s1-4 4-4 4 3 4 5-2 4-4 4-2-2-2-2"/></svg></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
