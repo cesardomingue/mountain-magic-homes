@@ -175,34 +175,41 @@ section.bg-dark h1, section.bg-dark h2, section.bg-dark h3 { color: var(--white)
     justify-content: space-between;
     max-width: var(--container-wide);
     margin: 0 auto;
-    padding: 28px 48px;
-    transition: padding 0.5s var(--ease);
+    padding: 18px 48px 18px 210px;
+    transition: padding 0.4s var(--ease);
 }
-.site-header.scrolled .header-inner { padding: 18px 48px; }
+.site-header.scrolled .header-inner { padding: 12px 48px 12px 110px; }
 
 .logo {
+    position: absolute;
+    left: 36px;
+    top: 10px;
+    z-index: 10;
     display: inline-flex;
     align-items: center;
     transition: opacity 0.3s var(--ease);
 }
 .logo img {
-    height: 96px !important;
-    width: 96px !important;
-    max-height: 96px;
-    max-width: 96px;
+    height: 160px !important;
+    width: 160px !important;
+    max-height: 160px;
+    max-width: 160px;
     object-fit: cover;
     display: block;
     border-radius: 50%;
-    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35), 0 0 0 2px rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.42), 0 0 0 3px rgba(255, 255, 255, 0.18);
     transition: all 0.4s var(--ease);
+}
+.site-header.scrolled .logo {
+    top: 8px;
 }
 .site-header.scrolled .logo img,
 .site-header.solid .logo img {
-    height: 76px !important;
-    width: 76px !important;
-    max-height: 76px;
-    max-width: 76px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(255, 255, 255, 0.14);
+    height: 64px !important;
+    width: 64px !important;
+    max-height: 64px;
+    max-width: 64px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(255, 255, 255, 0.14);
 }
 .logo:hover { opacity: 0.92; }
 /* legacy text fallback — hidden when img is present */
@@ -250,7 +257,7 @@ section.bg-dark h1, section.bg-dark h2, section.bg-dark h3 { color: var(--white)
 .site-header.scrolled .nav-link:hover,
 .site-header.solid .nav-link:hover { color: var(--accent-light); }
 
-.header-actions { display: flex; align-items: center; gap: 16px; }
+.header-actions { display: flex; align-items: center; gap: 16px; margin-left: auto; }
 
 .menu-toggle {
     display: none;
@@ -270,14 +277,16 @@ section.bg-dark h1, section.bg-dark h2, section.bg-dark h3 { color: var(--white)
 .site-header.solid .menu-toggle span { background: var(--white); }
 
 @media (max-width: 1024px) {
-    .logo img,
+    .logo { left: 20px; top: 8px; }
+    .logo img { height: 104px !important; width: 104px !important; max-height: 104px; max-width: 104px; }
     .site-header.scrolled .logo img,
-    .site-header.solid .logo img { height: 60px !important; width: 60px !important; }
+    .site-header.solid .logo img { height: 56px !important; width: 56px !important; max-height: 56px; max-width: 56px; }
 }
 @media (max-width: 640px) {
-    .logo img,
+    .logo { left: 14px; top: 6px; }
+    .logo img { height: 84px !important; width: 84px !important; max-height: 84px; max-width: 84px; }
     .site-header.scrolled .logo img,
-    .site-header.solid .logo img { height: 52px !important; width: 52px !important; }
+    .site-header.solid .logo img { height: 48px !important; width: 48px !important; max-height: 48px; max-width: 48px; }
 }
 
 /* =========================================================
@@ -1118,7 +1127,7 @@ section.bg-dark h1, section.bg-dark h2, section.bg-dark h3 { color: var(--white)
 @media (max-width: 1024px) {
     section { padding: 100px 0; }
     .container { padding: 0 24px; }
-    .header-inner { padding: 16px 20px; }
+    .header-inner { padding: 14px 16px 14px 140px; }
 
     /* Mobile menu drawer */
     .primary-nav {
@@ -1197,7 +1206,7 @@ section.bg-dark h1, section.bg-dark h2, section.bg-dark h3 { color: var(--white)
     .hero-description { font-size: 16px; }
     .hero-buttons { flex-direction: column; align-items: stretch; gap: 12px; }
     .hero-buttons .btn { width: 100%; padding: 16px 24px; }
-    .header-inner { padding: 14px 16px; }
+    .header-inner { padding: 12px 14px 12px 110px; }
     .header-actions .btn { padding: 10px 18px; font-size: 10px; letter-spacing: 1.5px; }
     .scroll-indicator { display: none; }
 
